@@ -13,7 +13,7 @@
       <link>http://localhost:1313/portfolio/posts/smoothvoxelterrain/</link>
       <pubDate>Sun, 18 Aug 2024 14:07:43 +0200</pubDate>
       <guid>http://localhost:1313/portfolio/posts/smoothvoxelterrain/</guid>
-      <description>Test Image hello there&#xA;Here is a LaTeX formula:&#xA;$$\sqrt{3x-1}+(1+x)^2$$</description>
+      <description>Here is a LaTeX formula:&#xA;$$\sqrt{3x-1}+(1+x)^2$$</description>
     </item>
   </channel>
 </rss>

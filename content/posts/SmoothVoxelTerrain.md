@@ -5,9 +5,8 @@ draft = false
 +++
 
 
-{{< figure src="/images/banner.png" title="Test Image" >}}
+{{< figure src="/portfolio/images/banner.png" width=100% >}}
 
-hello there
 
 Here is a LaTeX formula:
 
