@@ -1,0 +1,20 @@
+---
+title: "About"
+featured_image: '/images/banner.png'
+---
+
+Hi, I'm Joris, a Computer Scientist from the Netherlands.
+
+I've completed my BSC Computer Science and Engineering at TU Delft in 2023, with a 9.5 for my final thesis.
+That same year I started my Masters Computer Science at TU Delft, with a focus on Computer Graphics.
+In 2024, I have co-authored two peer reviewed papers. Links TBA.
+
+I plan to graduate in 2025.
+
+Ive worked on many Computer Graphics related projects.
+
+
+## Hobbies
+Other than programming, I love to spend my time playing the piano or producing music for family and friends. I also enjoy playing video games from time to time. 
+
+

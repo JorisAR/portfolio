@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Portfolio</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Portfolio</description>
+    <title>Joris Rijsdijk on Portfolio</title>
+    <link>http://localhost:1313/portfolio/</link>
+    <description>Recent content in Joris Rijsdijk on Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Aug 2024 14:42:32 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Sun, 18 Aug 2024 14:42:32 +0200</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>About Hi, I&amp;rsquo;m Joris, a Computer Scientist from the Netherlands.&#xA;I&amp;rsquo;ve completed my BSC Computer Science and Engineering in 2023, with a 9.5 for my final thesis.&#xA;Ive worked on many Computer Graphics related projects.</description>
-    </item>
+    <lastBuildDate>Sun, 18 Aug 2024 14:07:43 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Smooth Voxel Terrain</title>
-      <link>http://localhost:1313/posts/smoothvoxelterrain/</link>
+      <link>http://localhost:1313/portfolio/posts/smoothvoxelterrain/</link>
       <pubDate>Sun, 18 Aug 2024 14:07:43 +0200</pubDate>
-      <guid>http://localhost:1313/posts/smoothvoxelterrain/</guid>
-      <description>Smooth voxel terrain hello there</description>
+      <guid>http://localhost:1313/portfolio/posts/smoothvoxelterrain/</guid>
+      <description>Test Image hello there&#xA;Here is a LaTeX formula:&#xA;$$\sqrt{3x-1}+(1+x)^2$$</description>
     </item>
   </channel>
 </rss>

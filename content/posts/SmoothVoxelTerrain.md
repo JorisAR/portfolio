@@ -5,7 +5,11 @@ draft = false
 +++
 
 
-# Smooth voxel terrain
+{{< figure src="/images/banner.png" title="Test Image" >}}
 
 hello there
+
+Here is a LaTeX formula:
+
+$$\sqrt{3x-1}+(1+x)^2$$
 
