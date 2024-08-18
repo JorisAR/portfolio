@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolio</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Aug 2024 14:42:32 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 18 Aug 2024 14:42:32 +0200</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>About Hi, I&amp;rsquo;m Joris, a Computer Scientist from the Netherlands.&#xA;I&amp;rsquo;ve completed my BSC Computer Science and Engineering in 2023, with a 9.5 for my final thesis.&#xA;Ive worked on many Computer Graphics related projects.</description>
+    </item>
+    <item>
+      <title>Smooth Voxel Terrain</title>
+      <link>http://localhost:1313/posts/smoothvoxelterrain/</link>
+      <pubDate>Sun, 18 Aug 2024 14:07:43 +0200</pubDate>
+      <guid>http://localhost:1313/posts/smoothvoxelterrain/</guid>
+      <description>Smooth voxel terrain hello there</description>
+    </item>
+  </channel>
+</rss>
