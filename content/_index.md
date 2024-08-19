@@ -1,7 +1,7 @@
 ---
 title: "Joris Rijsdijk"
 featured_image: '/images/banner.png'
-description: "Computer Graphics & Science"
+description: "Computer Science & Graphics"
 ---
 Hey, I am Joris, a Dutch Computer Science student at TU Delft Specializing in Computer Graphics. 
 
