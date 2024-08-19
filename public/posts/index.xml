@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/portfolio/posts/smoothvoxelterrain/</guid>
       <description>Here is a LaTeX formula:&#xA;$$\sqrt{3x-1}+(1+x)^2$$</description>
     </item>
+    <item>
+      <title>University Projects</title>
+      <link>http://localhost:1313/portfolio/posts/universityprojects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/posts/universityprojects/</guid>
+      <description>I started studying at TU Delft in september 2020, and I have worked on many projects for courses since then. This is a collection of my proudest work related to computer graphics from my time at university. All other projects listed on my portfolio were made in my free time.&#xA;Pizzicato A serious game developed in 10 weeks with 4 other peers in collaboration with Psychology researchers, during which I was Game Designer and Programmer.</description>
+    </item>
   </channel>
 </rss>
