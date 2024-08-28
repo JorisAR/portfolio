@@ -41,15 +41,15 @@ $$ PoI = Position_A * (1 - t) + Position_B * t$$
 
 Next, for each cell, we average the edge intersection positions for each edge around it to get a single vertex position per cell. Finally, for each edge that intersects the implicit surface, we add a quad between the vertices of the four cells that share this edge. We are now left with a mesh that resembles the original implicit surface. We need to ensure that the triangles in the quad are wound such that the normal would point in the direction of positive increase in the SDF. We manage this by changing the winding order based on which vertex in the edge through the quad is negative.
 
-For each vertex, we want to calculate a normal.
+To achieve smooth shading, we want to calculate a normal for each vertex based on the SDF. The goal is that we have a normal that points in the direction of the largest gradient in the original SDF. We can approximate it using:
 
 $$ normal = \frac{1}{|E|} \sum_{A,B \in E} (( \text{value}_B - \text{value}_A ) \cdot \frac{\text{pos}_B - \text{pos}_A }{||\text{pos}_B - \text{pos}_A||})$$
 
 Here E is the set of all edges that intersect the implicit surface.
 
-This proves ineffective in cases where chunks of two different level of details border. In these cases, we can calculate the normal by fitting a plane to the set of points of intersections (PoIs) calculated earlier. 
+This seems ineffective in cases where chunks of two different level of details meet. Instead, we can calculate the normal by fitting a plane to the set of points of intersections (PoIs) calculated earlier.
 
-Here is the code I use for it:
+Here is the C# code I use for it:
 ```cs
         public static Vector3 Fit(List<Vector3> points, Vector3 centroid)
         {
@@ -73,22 +73,26 @@ We can build the tree based on two principles: We subdivide a node if both the S
 
 To improve performance, we want to cull parts of the terrain that are not on screen. And when editing a piece of terrain, we want to only regenerate parts of the terrain close to where it is edited. To facilitate this, we divide the terrain up into chunks. We can directly use the octree for this. A node is considered a chunk if its n sizes above the level of detail at its position, where I choose n = 4, resulting in 16x16x16 nodes per chunk. Chunks further away are also bigger in size, but equal in relative triangle resolution. This uses fewer objects and draw calls to render the terrain compared to an approach where chunk sizes are static.
 
-However, chunks also have a downside. To make a tight mesh, we need information from neighboring chunks. In 2D, every chunk has 16x16 nodes. Since we only add triangles between chunk centers, thats at most a 15x15 area covered, while we need 16x16. We therefore need to sample extra nodes from neighboring chunks in the positive directions.
+However, chunks also have a downside. To make a tight mesh, we need information from neighboring chunks. A tight mesh would require n faces in a certain dimension, which itself requires n + 1 vertices. As each vertex is calculated using its 7 direct and diagonal positive neighbors, we need n + 1 + 1 nodes per dimension. Therefore we sample one extra node from neighboring chunks in all directions, resulting in a 18×18×18 input to the surface nets algorithm. We 
 
 
 ## Changes to Surface Nets
-Surface nets originally requires a uniform voxel grid, not an octree. Luckily its principles can relatively easily apply to an octree, unlike marching cubes which relies on a look up table based on uniform voxel grids, or complex add-ons such as [Transvoxel](https://transvoxel.org/)
+Surface nets originally requires a uniform voxel grid, not an octree. Luckily its principles can relatively easily apply to an octree, unlike marching cubes which relies on a look up table that expects a uniform voxel grid. \(Unless complex add-ons such as [Transvoxel](https://transvoxel.org/) are used!\)
 
+I came up with several techniques to apply surface nets to an octree. Firstly, I temporarily create a 3D array which stores references to the leaves of the octree within a certain chunk. This means I can get the neighbors of each node in constant time, at the cost of linear time with respect to the leaves at the start of the meshing algorithm. 
 
+Secondly, Instead of taking the positive neighbors of nodes to calculate vertices, I consider neighbors in the outward direction away from the camera position. This effectively means only transitions from small to large nodes have to be considered, which makes the code simpler, but incompatible with octrees that are not only increasing in node size as distance to the camera increases. 
 
-I came up with several techniques to apply surface nets to an octree. Firstly, I temporarily create a 3D array which stores references to the leaves of the octree within a certain chunk. This means I can get the neighbors of each node in constant time, at the cost of linear time with respect to the leaves at the start. Secondly, I only consider neighbors in the outward direction away from the camera position. This effectively means only transitions from small to larger nodes have to be considered, which makes the code simpler. Finally, if an edge is shared by just three nodes, or one big node and two small ones, I create a triangle instead of a quad to complete the mesh. This allows us to create a mesh that perfectly connects nodes from different levels of detail.
+Finally, if an edge is shared by just three nodes, one big node and two small ones, I create a triangle instead of a quad to complete the mesh. This allows us to create a mesh that perfectly connects nodes from different levels of detail.
 
 {{< figure src="/portfolio/images/SmoothVoxelTerrain/triangulation.png" width=100% title="Nodes from different LoDs can still be integrated into surface nets by extending it to draw triangles when needed" >}}
 
 ## Editing the terrain
 To edit the terrain, we define an SDF, an operation, and an axis aligned bounding box (AABB) around the edit. For instance, to add a sphere to the terrain, we would want to define SDF describing this sphere with radius **r** and position **p**, we set the operation to Union, and we define an AABB that fits tightly around the sphere. 
 
-The terrain mesh can be edited relatively efficiently in real time in two steps. First, we change the octree by finding the leaves that intersect the AABB of the edit operation. The leaves are either pruned if they are fully within the volume of the new SDF, or they can be subdivided if they intersect the new SDF. Next, we remesh all the chunks that intersect the AABB using the updated octree, such that they represent the union of the sphere and the terrain.
+The terrain mesh can be edited relatively efficiently in real time in two steps. First, we change the octree by finding the leaves that intersect the AABB of the edit operation. The leaves are either pruned if they are fully within the volume of the new SDF, or they can be subdivided if they intersect the new SDF. We calculate a new value for each node by applying the desired boolean operation (Union or Difference) to the node's current value, and a sample of the new SDF at the node's center. If the new value and the old value differ by a threshold, I set the red channel of a node's color to one to mark it as edited.
+
+Next, we remesh all the chunks that intersect the AABB using the updated octree, such that they represent the union of the sphere and the terrain.
 
 ## Terrain Visuals
 
@@ -96,7 +100,7 @@ Each node in the octree also stores a color. We can set the red channel to one i
 
 $$ CaT = Color_A * (1 - t) + Color_B * t$$
 
-We take the average CaT per cell, and set it as the vertex color. Then in the terrain Shader, we set the Color to brown if the red channel of the vertex color is over 0.5.
+We average the CaT of all the edges neighboring a node, and set that as the node's vertex color. Then in the terrain Shader, I currently set the Color to brown if the red channel of the vertex color is over 0.5.
 
 {{< figure src="/portfolio/images/SmoothVoxelTerrain/suzanne.png" width=100% >}}
 
