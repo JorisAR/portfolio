@@ -8,12 +8,12 @@ description: "Depth Rendering and Post Processing"
 
 In 3D virtual environments, one can benefit greatly from having a map to lead them the way. Oftentimes maps are created by talented artists. However, when procedurally generating a terrain we have to create a map programmatically. 
 
-In our case, the goal is to generated a map for our [Smooth Voxel Terrain]({{< ref "/posts/SmoothVoxelTerrain.md" >}} "Smooth Voxel Terrain"). I planned out two possible solutions:
+In our case, the goal is to generated a map for our procedurally generated [Smooth Voxel Terrain]({{< ref "/posts/SmoothVoxelTerrain.md" >}} "Smooth Voxel Terrain"). I planned out two possible solutions:
 
 1. Generate a heightmap texture based on the octree. This would involve raymarching through the SDF for every pixel in the texture.
 2. Use a second camera to capture a depth texture of the world from above.
 
-I chose to implement the second solution, as its relatively simple, cheap to compute and highly customizable. The only major drawback is that we are required to have generated the terrain before being able to render the minimap, thus introducing a dependency on terrain generation.
+I chose to implement the second solution, as its relatively simple, cheap to compute and highly customizable. In fact, it is fast enough to be used in realtime, as it fully uses the efficient rasterization pipeline modern GPUs are optimized for. The only major drawback is that we are required to have generated the terrain before being able to render the minimap, thus introducing a dependency on terrain generation.
 
 ## Implementation
 
@@ -37,6 +37,8 @@ We set up a camera way up in the sky, pointing downward to the sky. In my case, 
 When rendering to a texture, we get the following result: (at a width of 250)
 
 {{< figure src="/portfolio/images/IsoContourMap/step1.png" width=100% >}}
+
+*Specifically for Godot, I use a [SubViewPort](https://docs.godotengine.org/en/stable/classes/class_subviewport.html) to render a secondary camera to a texture, which I display in the UI using a [TextureRect](https://docs.godotengine.org/en/stable/classes/class_texturerect.html)*
 
 ### Depth
 
@@ -141,4 +143,5 @@ The resulting map looks nice, and is well interpretable:
 
 {{< figure src="/portfolio/images/IsoContourMap/result.png" width=100% >}}
 
-The pipeline I presented today is relatively simple to implement, and should work in any environment that has the desired part of the terrain ready in a 3D scene.
+The pipeline I presented today is relatively simple to implement, and should work in any environment that has the desired part of the terrain ready in a 3D scene. Best of all, it is computable in real time, so it could be easily integrated into a game as a minimap for instance.
+
