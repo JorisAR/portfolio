@@ -28,7 +28,7 @@ $$ (x, y, z) \in \mathbb{R}^3 \mid f(x, y, z) = 0 $$
 
 ## Isosurface Extraction using Surface Nets
 
-SDFs are not useful on their own, we need to somehow render them onto the screen. A common technique is raymarching, which is essentially a form of raytracing. Alternatively isosurface extraction can be used, which are algorithms that aim to generate a polygonal mesh that best approximates the SDF’s implicit surface. While the marching cubes algorithm is the most common for this task, I chose to implement surface nets, because it is better suited to mesh between chunks of different level of detail.
+SDFs are not useful on their own, we need to somehow render them onto the screen. A common technique is raymarching, which is essentially a form of raytracing. Alternatively isosurface extraction can be used, which are algorithms that aim to generate a polygonal mesh that best approximates the SDF’s implicit surface. While the marching cubes algorithm is the most common for this task, I chose to implement surface nets, because it is better suited to mesh between chunks of different level of detail, and [fast surface nets implementation exist](https://github.com/bonsairobo/fast-surface-nets-rs).
 
 {{< figure src="/portfolio/images/SmoothVoxelTerrain/voxelGrid.png" width=100% >}}
 
@@ -115,6 +115,3 @@ Overall I believe to have succeeded at creating a fully editable large scale smo
 
 There are a number of extensions I am considering for this project. Firstly, I want to be able to populate the terrain with countless objects such as trees that can be seen from afar. Secondly, I would like to extend the surface extraction method to guarantee manifold meshes. Thirdly, I would like to optimize the underlying octree structure, to allow for more efficient memory usage, and decrease the time it takes to edit large parts of the terrain.
 
-## Inspiration and sources:
-
-- [Rust Surface Nets Implementation](https://github.com/bonsairobo/fast-surface-nets-rs)
