@@ -1,5 +1,5 @@
 ---
-title: "Real-Time Zelda inspired isoline Map"
+title: "Real-Time Zelda inspired Isoline Map"
 featured_image: '/images/IsoContourMap/teaser.png'
 description: "Depth Rendering and Post Processing"
 ---
@@ -42,7 +42,7 @@ When rendering to a texture, we get the following result: (at a width of 250)
 
 ### Depth
 
-However, we need the height of the terrain at each pixel of the map rather than the color. Godot unfortunately has does not allow you to easily render auxiliary depth textures from arbitrary locations. Instead we can use a costlier option: 
+However, we need the height of the terrain at each pixel of the map rather than the color. Godot unfortunately does not allow you to easily render auxiliary depth textures from arbitrary locations. Instead we can use a costlier option: 
 - Render the opaque scene to a second camera.
 - Place a large quad in front of the secondary camera, with a shader that transforms camera depth into fragment height.
 
@@ -76,7 +76,7 @@ Our map looks like this now:
 
 ### Discretizing height.
 
-In Computer Graphics, we use Illustrative Rendering techniques to aid people in understanding certain data. Humans are not great at interpreting a linear color gradient, as we perceive luminance non-linearly. this is a problem for our heightmap, as we want players to be able to make informed decisions about the height and gradient of a terrain at a certain position.
+In Computer Graphics, we use Illustrative Rendering techniques to aid people in understanding certain data. Humans are not great at interpreting a linear color gradient, as we perceive luminance non-linearly. This is a problem for our heightmap, as we want players to be able to make informed decisions about the height and gradient of a terrain at a certain position.
 
 [Isoline maps](https://en.wikipedia.org/wiki/Contour_line) have been used for centuries to display the height particular sections of land, which makes them very suitable for our use case. We can achieve a convincing isoline look very easily using a two step process. First, we expand our fragment shader to discretize the height into distinct color bands. Like in zelda, I chose to split the map into two regions, water and land, based on height. I wrote the following GLSL function to achieve it, were isoDist is the bandwidth of height values per color band.
 
