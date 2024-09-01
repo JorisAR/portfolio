@@ -9,14 +9,14 @@ I started studying at TU Delft in september 2020, and I have worked on many proj
 ## Pizzicato
 A serious game developed in 10 weeks with 4 other peers in collaboration with Psychology researchers, during which I was Game Designer and Programmer. We used Google's Mediapipe to capture the player's hands from a regular webcam in real time. We use this input in a rhythm game we call Pizzicato. The goal of the project was to provide a basis for research into sonification, which refers to the notion that actions (from users) produce sounds (positive reinforcement). Psychology researchers hypothesize sonification can be exploited to accelerate the learning process, useful during e.g. Rehabilitation.
 
-The game itself is a rhythm game, where the player has to pinch their fingers to pop bubbles at the right time, indicated both visually and by the background track. To aid research, its a very customizable yet enjoyable experience. We published a paper about it: Link TBA, and it is actively being used at Leiden for research into sonification.
+The game itself is a rhythm game, where the player has to pinch their fingers to pop bubbles at the right time, indicated both visually and by the background track. To aid research, its a very customizable yet enjoyable experience. We published a paper about it, and it is actively being used at Leiden for research into sonification.
 
 {{< figure src="/portfolio/images/UniversityProjects/pizzicato.png" width=100% title="A Screenshot from Pizzicato.">}}
 
 ## Holonomy
 For my bachelor thesis I worked on populating an existing infinite hyperbolic world using Wave Function Collapse, to see if it would improve immersion and have potential for improved navigational capabilities, compared to a mostly empty world. My research was done with "Holonomy" as a basis, which is an environment made for Virtual Reality headsets. It is made up of three by three tiles in the real world, but an infinite hyperbolic plane (with 5 order square tiling) in the virtual world. Solely by walking in the real world, you are able to explore an infinite virtual world, thanks to the mathematical principle of Holonomy. Due to the hyperbolic nature of the world, an object on the right side of a tree thunk cannot be observed on the left side.
 
-During my masters I had the opportunity to continue work on this project. I mostly worked on rendering and gameplay scripting during this time. We also published a paper about it: Link TBA.
+During my masters I had the opportunity to continue work on this project. I mostly worked on rendering and gameplay scripting during this time. We also published a paper about it.
 
 {{< figure src="/portfolio/images/UniversityProjects/holonomy1.png" width=100% title="A Screenshot from Holonomy.">}}
 
