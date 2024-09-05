@@ -50,6 +50,8 @@
 
   <meta itemprop="name" content="Joris&#39; Portfolio">
   <meta itemprop="description" content="Computer Science &amp; Graphics">
+  <meta itemprop="datePublished" content="2024-08-19T23:09:01+02:00">
+  <meta itemprop="dateModified" content="2024-08-19T23:09:01+02:00">
   <meta itemprop="wordCount" content="33">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Joris&#39; Portfolio">
@@ -185,18 +187,20 @@
           
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
           <a href="/portfolio/posts/smoothvoxelterrain/" class="db grow">
-            <img src="http://localhost:1313/portfolio/images/SmoothVoxelTerrain/banner.png" class="img" alt="image from Large Scale Smooth Voxel Terrain">
+            <div class="square">
+              <img src="http://localhost:1313/portfolio/images/SmoothVoxelTerrain/banner.png" class="img" alt="image from Large-Scale Smooth Voxel Terrain">
+            </div>
           </a>
         </div>
       
       <div class="blah w-100 w-60-ns pl3-ns">
         <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/portfolio/posts/smoothvoxelterrain/" class="color-inherit dim link">
-            Large Scale Smooth Voxel Terrain
+            Large-Scale Smooth Voxel Terrain
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Rendering large terrains is no easy task. In real time computer graphics, terrains are often large subdivided planes with vertices translated vertically based on a heightmap, but this means that overhangs or caves are impossible without extra work or additional meshes. Instead, we can use a three dimensional volume to represent the terrain. However, if we want a 4 by 4 by 4 kilometer 3D terrain at a 1 cubic meter resolution with just a floating point number at every position, we would need about a quarter terabyte of memory.
+          Rendering large terrains is no easy task. In real-time computer graphics, terrains are often large subdivided planes with vertices translated vertically based on a heightmap, but this means that overhangs or caves are impossible without extra work or additional meshes. Instead, we can use a three dimensional volume to represent the terrain. However, if we want a 4 by 4 by 4 kilometer 3D terrain at a 1 cubic meter resolution with just a floating point number at every position, we would need about a quarter terabyte of memory.
         </div>
           <a href="/portfolio/posts/smoothvoxelterrain/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
@@ -204,6 +208,24 @@
     </div>
   </div>
 </article>
+
+<style>
+.square {
+  width: 100%;
+  padding-top: 60%;  
+  position: relative;
+  overflow: hidden;
+}
+.square img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+</style>
 
             </div>
           
@@ -216,19 +238,21 @@
           
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
           <a href="/portfolio/posts/isocontourmap/" class="db grow">
-            <img src="http://localhost:1313/portfolio/images/IsoContourMap/teaser.png" class="img" alt="image from Real-Time Zelda inspired isoline Map">
+            <div class="square">
+              <img src="http://localhost:1313/portfolio/images/IsoContourMap/teaser.png" class="img" alt="image from Real-Time Zelda inspired Isoline Map">
+            </div>
           </a>
         </div>
       
       <div class="blah w-100 w-60-ns pl3-ns">
         <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/portfolio/posts/isocontourmap/" class="color-inherit dim link">
-            Real-Time Zelda inspired isoline Map
+            Real-Time Zelda inspired Isoline Map
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
           In 3D virtual environments, one can benefit greatly from having a map to lead them the way. Oftentimes maps are created by talented artists. However, when procedurally generating a terrain we have to create a map programmatically.
-In our case, the goal is to generated a map for our Smooth Voxel Terrain. I planned out two possible solutions:
+In our case, the goal is to generated a map for our procedurally generated Smooth Voxel Terrain. I planned out two possible solutions:
 Generate a heightmap texture based on the octree. This would involve raymarching through the SDF for every pixel in the texture.
         </div>
           <a href="/portfolio/posts/isocontourmap/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
@@ -237,6 +261,24 @@ Generate a heightmap texture based on the octree. This would involve raymarching
     </div>
   </div>
 </article>
+
+<style>
+.square {
+  width: 100%;
+  padding-top: 60%;  
+  position: relative;
+  overflow: hidden;
+}
+.square img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+</style>
 
             </div>
           
@@ -249,7 +291,9 @@ Generate a heightmap texture based on the octree. This would involve raymarching
           
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
           <a href="/portfolio/posts/universityprojects/" class="db grow">
-            <img src="http://localhost:1313/portfolio/images/UniversityProjects/collage.png" class="img" alt="image from University Projects">
+            <div class="square">
+              <img src="http://localhost:1313/portfolio/images/UniversityProjects/collage.png" class="img" alt="image from University Projects">
+            </div>
           </a>
         </div>
       
@@ -269,6 +313,24 @@ Pizzicato A serious game developed in 10 weeks with 4 other peers in collaborati
     </div>
   </div>
 </article>
+
+<style>
+.square {
+  width: 100%;
+  padding-top: 60%;  
+  position: relative;
+  overflow: hidden;
+}
+.square img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+</style>
 
             </div>
           

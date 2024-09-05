@@ -6,20 +6,21 @@
     <description>Recent content in Joris&#39; Portfolio on Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Large Scale Smooth Voxel Terrain</title>
+      <title>Large-Scale Smooth Voxel Terrain</title>
       <link>http://localhost:1313/portfolio/posts/smoothvoxelterrain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/posts/smoothvoxelterrain/</guid>
-      <description>Rendering large terrains is no easy task. In real time computer graphics, terrains are often large subdivided planes with vertices translated vertically based on a heightmap, but this means that overhangs or caves are impossible without extra work or additional meshes. Instead, we can use a three dimensional volume to represent the terrain. However, if we want a 4 by 4 by 4 kilometer 3D terrain at a 1 cubic meter resolution with just a floating point number at every position, we would need about a quarter terabyte of memory.</description>
+      <description>Rendering large terrains is no easy task. In real-time computer graphics, terrains are often large subdivided planes with vertices translated vertically based on a heightmap, but this means that overhangs or caves are impossible without extra work or additional meshes. Instead, we can use a three dimensional volume to represent the terrain. However, if we want a 4 by 4 by 4 kilometer 3D terrain at a 1 cubic meter resolution with just a floating point number at every position, we would need about a quarter terabyte of memory.</description>
     </item>
     <item>
-      <title>Real-Time Zelda inspired isoline Map</title>
+      <title>Real-Time Zelda inspired Isoline Map</title>
       <link>http://localhost:1313/portfolio/posts/isocontourmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/posts/isocontourmap/</guid>
-      <description>In 3D virtual environments, one can benefit greatly from having a map to lead them the way. Oftentimes maps are created by talented artists. However, when procedurally generating a terrain we have to create a map programmatically.&#xA;In our case, the goal is to generated a map for our Smooth Voxel Terrain. I planned out two possible solutions:&#xA;Generate a heightmap texture based on the octree. This would involve raymarching through the SDF for every pixel in the texture.</description>
+      <description>In 3D virtual environments, one can benefit greatly from having a map to lead them the way. Oftentimes maps are created by talented artists. However, when procedurally generating a terrain we have to create a map programmatically.&#xA;In our case, the goal is to generated a map for our procedurally generated Smooth Voxel Terrain. I planned out two possible solutions:&#xA;Generate a heightmap texture based on the octree. This would involve raymarching through the SDF for every pixel in the texture.</description>
     </item>
     <item>
       <title>University Projects</title>
