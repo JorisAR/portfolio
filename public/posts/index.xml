@@ -6,26 +6,33 @@
     <description>Recent content in Projects on Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/portfolio/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Large-Scale Smooth Voxel Terrain</title>
-      <link>http://localhost:1313/portfolio/posts/smoothvoxelterrain/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/posts/smoothvoxelterrain/</guid>
-      <description>Rendering large terrains is no easy task. In real-time computer graphics, terrains are often large subdivided planes with vertices translated vertically based on a heightmap, but this means that overhangs or caves are impossible without extra work or additional meshes. Instead, we can use a three dimensional volume to represent the terrain. However, if we want a 4 by 4 by 4 kilometer 3D terrain at a 1 cubic meter resolution with just a floating point number at every position, we would need about a quarter terabyte of memory.</description>
+      <title>Population of a Large-Scale Terrain</title>
+      <link>http://localhost:1313/portfolio/posts/population/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/posts/population/</guid>
+      <description>Previously I introduced a Large-Scale Smooth Voxel Terrain While impressive in scale, it lacked visual variety and complexity. One way to mitigate this is by introducing natural objects such as grass and trees.&#xA;Many voxel engines and games such as minecraft tackle this by incorporating these features into voxels too, but this can both make asset creation more difficult, and increase the demands put on our voxel octree. Instead, I chose to implement more traditional methods of distributing objects on the terrain surface, often seen in games in combination with heightmap terrains.</description>
     </item>
     <item>
       <title>Real-Time Zelda inspired Isoline Map</title>
       <link>http://localhost:1313/portfolio/posts/isocontourmap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/posts/isocontourmap/</guid>
       <description>In 3D virtual environments, one can benefit greatly from having a map to lead them the way. Oftentimes maps are created by talented artists. However, when procedurally generating a terrain we have to create a map programmatically.&#xA;In our case, the goal is to generated a map for our procedurally generated Smooth Voxel Terrain. I planned out two possible solutions:&#xA;Generate a heightmap texture based on the octree. This would involve raymarching through the SDF for every pixel in the texture.</description>
     </item>
     <item>
+      <title>Large-Scale Smooth Voxel Terrain</title>
+      <link>http://localhost:1313/portfolio/posts/smoothvoxelterrain/</link>
+      <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/posts/smoothvoxelterrain/</guid>
+      <description>Rendering large terrains is no easy task. In real-time computer graphics, terrains are often large subdivided planes with vertices translated vertically based on a heightmap, but this means that overhangs or caves are impossible without extra work or additional meshes. Instead, we can use a three dimensional volume to represent the terrain. However, if we want a 4 by 4 by 4 kilometer 3D terrain at a 1 cubic meter resolution with just a floating point number at every position, we would need about a quarter terabyte of memory.</description>
+    </item>
+    <item>
       <title>University Projects</title>
       <link>http://localhost:1313/portfolio/posts/universityprojects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/posts/universityprojects/</guid>
       <description>I started studying at TU Delft in september 2020, and I have worked on many projects for courses since then. This is a collection of my proudest work related to computer graphics from my time at university. All other projects listed on my portfolio were made in my free time.&#xA;Pizzicato A serious game developed in 10 weeks with 4 other peers in collaboration with Psychology researchers, during which I was Game Designer and Programmer.</description>
     </item>

@@ -2,6 +2,7 @@
 title: "Real-Time Zelda inspired Isoline Map"
 featured_image: '/images/IsoContourMap/teaser.png'
 description: "Depth Rendering and Post Processing"
+date: "2024-09-01"
 ---
 
 {{< figure src="/portfolio/images/IsoContourMap/teaser.png" width=100% >}}

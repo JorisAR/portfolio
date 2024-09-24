@@ -1,6 +1,7 @@
 ---
 title: "About"
 featured_image: '/images/banner.png'
+date: "2024-08-01"
 ---
 
 Hello everyone, My name is Joris, a Dutch Computer Science student at TU Delft Specializing in Computer Graphics. 

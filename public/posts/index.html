@@ -50,8 +50,8 @@
 
   <meta itemprop="name" content="Projects">
   <meta itemprop="description" content="These are my main projects I have worked on over the years.">
-  <meta itemprop="datePublished" content="2024-08-19T23:09:01+02:00">
-  <meta itemprop="dateModified" content="2024-08-19T23:09:01+02:00">
+  <meta itemprop="datePublished" content="2024-09-24T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-09-24T00:00:00+00:00">
   <meta itemprop="wordCount" content="12">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Projects">
@@ -159,23 +159,24 @@
       
           
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <a href="/portfolio/posts/smoothvoxelterrain/" class="db grow">
+          <a href="/portfolio/posts/population/" class="db grow">
             <div class="square">
-              <img src="http://localhost:1313/portfolio/images/SmoothVoxelTerrain/banner.png" class="img" alt="image from Large-Scale Smooth Voxel Terrain">
+              <img src="http://localhost:1313/portfolio/images/Population/screenshot3.png" class="img" alt="image from Population of a Large-Scale Terrain">
             </div>
           </a>
         </div>
       
       <div class="blah w-100 w-60-ns pl3-ns">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/portfolio/posts/smoothvoxelterrain/" class="color-inherit dim link">
-            Large-Scale Smooth Voxel Terrain
+          <a href="/portfolio/posts/population/" class="color-inherit dim link">
+            Population of a Large-Scale Terrain
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Rendering large terrains is no easy task. In real-time computer graphics, terrains are often large subdivided planes with vertices translated vertically based on a heightmap, but this means that overhangs or caves are impossible without extra work or additional meshes. Instead, we can use a three dimensional volume to represent the terrain. However, if we want a 4 by 4 by 4 kilometer 3D terrain at a 1 cubic meter resolution with just a floating point number at every position, we would need about a quarter terabyte of memory.
+          Previously I introduced a Large-Scale Smooth Voxel Terrain While impressive in scale, it lacked visual variety and complexity. One way to mitigate this is by introducing natural objects such as grass and trees.
+Many voxel engines and games such as minecraft tackle this by incorporating these features into voxels too, but this can both make asset creation more difficult, and increase the demands put on our voxel octree. Instead, I chose to implement more traditional methods of distributing objects on the terrain surface, often seen in games in combination with heightmap terrains.
         </div>
-          <a href="/portfolio/posts/smoothvoxelterrain/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+          <a href="/portfolio/posts/population/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
       </div>
     </div>
@@ -230,6 +231,58 @@ In our case, the goal is to generated a map for our procedurally generated Smoot
 Generate a heightmap texture based on the octree. This would involve raymarching through the SDF for every pixel in the texture.
         </div>
           <a href="/portfolio/posts/isocontourmap/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+.square {
+  width: 100%;
+  padding-top: 60%;  
+  position: relative;
+  overflow: hidden;
+}
+.square img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+        </div>
+      
+      
+        <div class="relative w-100 w-80-l mb4 bg-white">
+          
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/portfolio/posts/smoothvoxelterrain/" class="db grow">
+            <div class="square">
+              <img src="http://localhost:1313/portfolio/images/SmoothVoxelTerrain/banner.png" class="img" alt="image from Large-Scale Smooth Voxel Terrain">
+            </div>
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/portfolio/posts/smoothvoxelterrain/" class="color-inherit dim link">
+            Large-Scale Smooth Voxel Terrain
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Rendering large terrains is no easy task. In real-time computer graphics, terrains are often large subdivided planes with vertices translated vertically based on a heightmap, but this means that overhangs or caves are impossible without extra work or additional meshes. Instead, we can use a three dimensional volume to represent the terrain. However, if we want a 4 by 4 by 4 kilometer 3D terrain at a 1 cubic meter resolution with just a floating point number at every position, we would need about a quarter terabyte of memory.
+        </div>
+          <a href="/portfolio/posts/smoothvoxelterrain/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
       </div>
     </div>

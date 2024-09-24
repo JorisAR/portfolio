@@ -1,6 +1,8 @@
 ---
 title: 'University Projects'
 featured_image: '/images/UniversityProjects/collage.png'
+description: "A diverse selection of Computer Graphics projects."
+date: "2024-08-01"
 ---
 
 I started studying at TU Delft in september 2020, and I have worked on many projects for courses since then. This is a collection of my proudest work related to computer graphics from my time at university. All other projects listed on my portfolio were made in my free time.
