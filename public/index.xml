@@ -6,8 +6,15 @@
     <description>Recent content in Joris&#39; Portfolio on Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simulating Forest Fires</title>
+      <link>http://localhost:1313/portfolio/posts/forestfires/</link>
+      <pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/posts/forestfires/</guid>
+      <description>Inspired by the Scintilla paper, I wanted to create interesting forest fire simulations on my procedurally generated Smooth Voxel Terrain.&#xA;To achieve it, I came up with the following requirements:&#xA;We need to come up with a system to modify the grass on the terrain. It needs to be able to visually indicate that it has been burnt, and in that case, it shouldn&amp;rsquo;t be able to be burnt again. Trees should be able to be cut in half.</description>
+    </item>
     <item>
       <title>Population of a Large-Scale Terrain</title>
       <link>http://localhost:1313/portfolio/posts/population/</link>

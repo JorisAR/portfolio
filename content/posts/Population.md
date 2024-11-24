@@ -5,6 +5,7 @@ description: "Octrees, Sampling Methods and Lots of Objects"
 date: "2024-09-24"
 ---
 
+{{< youtube 1y3Wop1-KQA >}}
 
 Previously I introduced a [Large-Scale Smooth Voxel Terrain]({{< ref "/posts/SmoothVoxelTerrain.md" >}}) While impressive in scale, it lacked visual variety and complexity. One way to mitigate this is by introducing natural objects such as grass and trees. 
 

@@ -75,7 +75,7 @@ We can build the tree based on two principles: We subdivide a node if both the S
 
 To improve performance, we want to cull parts of the terrain that are not on screen. And when editing a piece of terrain, we want to only regenerate parts of the terrain close to where it is edited. To facilitate this, we divide the terrain up into chunks. We can directly use the octree for this. A node is considered a chunk if its n sizes above the level of detail at its position, where I choose n = 4, resulting in 16x16x16 nodes per chunk. Chunks further away are also bigger in size, but equal in relative triangle resolution. This uses fewer objects and draw calls to render the terrain compared to an approach where chunk sizes are static.
 
-However, chunks also have a downside. To make a tight mesh, we need information from neighboring chunks. A tight mesh would require n faces in a certain dimension, which itself requires n + 1 vertices. As each vertex is calculated using its 7 direct and diagonal positive neighbors, we need n + 1 + 1 nodes per dimension. Therefore we sample one extra node from neighboring chunks in all directions, resulting in a 18×18×18 input to the surface nets algorithm. We 
+However, chunks also have a downside. To make a tight mesh, we need information from neighboring chunks. A tight mesh would require n faces in a certain dimension, which itself requires n + 1 vertices. As each vertex is calculated using its 7 direct and diagonal positive neighbors, we need n + 1 + 1 nodes per dimension. Therefore we sample one extra node from neighboring chunks in all directions, resulting in a 18×18×18 input to the surface nets algorithm.
 
 
 ## Changes to Surface Nets

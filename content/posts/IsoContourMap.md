@@ -5,7 +5,7 @@ description: "Depth Rendering and Post Processing"
 date: "2024-09-01"
 ---
 
-{{< figure src="/portfolio/images/IsoContourMap/teaser.png" width=100% >}}
+{{< youtube FP2RoYG22hI >}}
 
 In 3D virtual environments, one can benefit greatly from having a map to lead them the way. Oftentimes maps are created by talented artists. However, when procedurally generating a terrain we have to create a map programmatically. 
 
@@ -21,7 +21,7 @@ I chose to implement the second solution, as its relatively simple, cheap to com
 It's a fairly straightforward process to generate the map, but it takes a couple distinct steps regardless. I have implemented it in Godot using C#, but the ideas should be generally applicable.
 
 ### Setup
-We set up a camera way up in the sky, pointing downward to the sky. In my case, I decided to move it to **y = 2048**, with the horizontal position being equal to that of the player. I chose to use a perspective camera rather than an orthographic one, which means we have to calculate a suitable FoV. To do this, we can decide a height to focus the on, I chose zero. We can use the following code to adapt the camera's frustum to be the given width at our chosen height. 
+We set up a camera way up in the sky, pointing downward to the sky. In my case, I decided to move it to **y = 2048**, with the horizontal position being equal to that of the player. I chose to use a perspective camera rather than an orthographic one, which means we have to calculate a suitable FoV. To do this, we can decide a height to focus on, I chose zero. We can use the following code to adapt the camera's frustum to be the given width at our chosen height. 
 
 ```cs
         private void UpdateCameraFoV(float width)
@@ -50,7 +50,7 @@ However, we need the height of the terrain at each pixel of the map rather than 
 From the primary camera it looks rather interesting:
 {{< figure src="/portfolio/images/IsoContourMap/skyquad.png" width=100% >}}
 
-*Normally the quad would be hidden from the primary camera either using render layers, or by the fact that we underside of the quad is culled.*
+*Normally the quad would be hidden from the primary camera either using render layers, or by the fact that the underside of the quad is culled.*
 
 
 We render the quad using the following fragment shader, mostly taken from the [Godot Docs](https://docs.godotengine.org/en/stable/tutorials/shaders/advanced_postprocessing.html). We can scale the height to be in a more easily observable range by remapping the height between -50 and 50 to 0 and 1.
@@ -79,7 +79,7 @@ Our map looks like this now:
 
 In Computer Graphics, we use Illustrative Rendering techniques to aid people in understanding certain data. Humans are not great at interpreting a linear color gradient, as we perceive luminance non-linearly. This is a problem for our heightmap, as we want players to be able to make informed decisions about the height and gradient of a terrain at a certain position.
 
-[Isoline maps](https://en.wikipedia.org/wiki/Contour_line) have been used for centuries to display the height particular sections of land, which makes them very suitable for our use case. We can achieve a convincing isoline look very easily using a two step process. First, we expand our fragment shader to discretize the height into distinct color bands. Like in zelda, I chose to split the map into two regions, water and land, based on height. I wrote the following GLSL function to achieve it, were isoDist is the bandwidth of height values per color band.
+[Isoline maps](https://en.wikipedia.org/wiki/Contour_line) have been used for centuries to display the height particular sections of land, which makes them very suitable for our use case. We can achieve a convincing isoline look very easily using a two step process. First, we expand our fragment shader to discretize the height into distinct color bands. Like in zelda, I chose to split the map into two regions, water and land, based on height. I wrote the following GLSL function to achieve it, where isoDist is the bandwidth of height values per color band.
 
 
 ```glsl
