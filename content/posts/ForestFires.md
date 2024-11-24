@@ -5,12 +5,14 @@ description: "VFX using Textures, Geometric Data Processing and Billboards"
 date: "2024-11-24"
 ---
 
+{{< youtube N6fbC7LbrZc >}}
+
 Inspired by [the Scintilla paper](https://storage.googleapis.com/pirk.io/projects/scintilla/index.html), I wanted to create interesting forest fire simulations on my procedurally generated [Smooth Voxel Terrain]({{< ref "/posts/SmoothVoxelTerrain.md" >}}).
 
 To achieve it, I came up with the following requirements:
 1. We need to come up with a system to modify the grass on the terrain. It needs to be able to visually indicate that it has been burnt, and in that case, it shouldn't be able to be burnt again.
 2. Trees should be able to be cut in half. This way, fire could burn trees and let them fall over once they are burnt up.
-3. there should be a system that renders and spreads fire in sensible ways.
+3. There should be a system that renders and spreads fire in sensible ways.
 
 
 These requirements combined will provide us with a system that is able to somewhat effectively simulate forest fires. Keep in mind that my goal here is not realism, but rather a proof of concept to show that my large terrain system can support such fire simulations.
@@ -72,7 +74,7 @@ $$
 
 Admittedly, the effect is a little less effective when the camera moves quickly in the axis of greatest temporal movement in the volume, but it beats scrolling 2D noise in my opinion.
 
-Trees can also be set on fire, but it would be wasteful to instantiate many flames on it to make it look good. Instead, I simply scroll a noise texture over the tree, and use this as an alpha mask to blend between fire and the tree itself.. 
+Trees can also be set on fire, but it would be wasteful to instantiate many flames on it to make it look good. Instead, I simply scroll a noise texture over the tree, and use this as an alpha mask to blend between fire and the tree itself.
 
 
 ## Conclusion
