@@ -6,8 +6,15 @@
     <description>Recent content in Joris&#39; Portfolio on Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simulating Digital Evolution</title>
+      <link>http://localhost:1313/portfolio/posts/evolutionaryalgorithms/</link>
+      <pubDate>Sun, 29 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/posts/evolutionaryalgorithms/</guid>
+      <description>Many problems are difficult to solve using classic algorithms. This is where state of the art artificial intelligence techniques come into play. While everyone talks about large language models and diffusers nowadays, I think a different branch called evolutionary algorithms is much more interesting. Originally inspired by biological evolution, this branch of artificial intelligence aims to solve problems using elegant concepts.&#xA;While many types of evolutionary algorithms exist, they almost all share the notion of using a population to converge to an optimal solution.</description>
+    </item>
     <item>
       <title>Simulating Forest Fires</title>
       <link>http://localhost:1313/portfolio/posts/forestfires/</link>
