@@ -6,8 +6,15 @@
     <description>Recent content in Projects on Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/portfolio/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Training Evolutionary Agents</title>
+      <link>http://localhost:1313/portfolio/posts/evolutionaryagents/</link>
+      <pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/posts/evolutionaryagents/</guid>
+      <description>Last time, I showcased some basics of Evolutionary Algorithms, which can elegantly solve black box problems. Today I extend it to train agents using reinforcement learning and neural networks. If you want to check it out for yourself, feel free to look at the source code.&#xA;Reinforcement learning is a branch of machine learning where agents aim to learn some behavior that maximizes the reward obtained in some environment by taking the right actions given a particular state.</description>
+    </item>
     <item>
       <title>Simulating Digital Evolution</title>
       <link>http://localhost:1313/portfolio/posts/evolutionaryalgorithms/</link>
