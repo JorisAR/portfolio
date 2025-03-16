@@ -6,8 +6,15 @@
     <description>Recent content in Joris&#39; Portfolio on Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Path Tracing</title>
+      <link>http://localhost:1313/portfolio/posts/pathtracing/</link>
+      <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/posts/pathtracing/</guid>
+      <description>Ray and path tracing is becoming more and more popular in real-time graphics. Many modern games release with ray traced reflections, and some games even attempt to have full path traced global illumination, essentially modelling light like in real-life. However, Godot lacks a good path tracing solution. Therefore, I had to dive in and make a simple renderer myself.&#xA;To render a basic picture with any ray based technique, we shoot a ray into the scene for every pixel on the screen.</description>
+    </item>
     <item>
       <title>Training Evolutionary Agents</title>
       <link>http://localhost:1313/portfolio/posts/evolutionaryagents/</link>
@@ -55,7 +62,7 @@
       <link>http://localhost:1313/portfolio/posts/universityprojects/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/posts/universityprojects/</guid>
-      <description>I started studying at TU Delft in september 2020, and I have worked on many projects for courses since then. This is a collection of my proudest work related to computer graphics from my time at university. All other projects listed on my portfolio were made in my free time.&#xA;Pizzicato A serious game developed in 10 weeks with 4 other peers in collaboration with Psychology researchers, during which I was Game Designer and Programmer.</description>
+      <description>I started studying at TU Delft in september 2020, and I have worked on many projects for courses since then. This is a collection of my proudest work related to computer graphics from my time at university. All other projects listed on my portfolio were made on my own, in my free time.&#xA;Pizzicato A serious game developed in 10 weeks with 4 other peers in collaboration with Psychology researchers, during which I was Game Designer and Programmer.</description>
     </item>
   </channel>
 </rss>

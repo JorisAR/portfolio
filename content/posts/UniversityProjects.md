@@ -1,11 +1,11 @@
 ---
 title: 'University Projects'
 featured_image: '/images/UniversityProjects/collage.png'
-description: "A diverse selection of Computer Graphics projects."
+description: "A diverse selection of (primarily) Computer Graphics projects."
 date: "2024-08-01"
 ---
 
-I started studying at TU Delft in september 2020, and I have worked on many projects for courses since then. This is a collection of my proudest work related to computer graphics from my time at university. All other projects listed on my portfolio were made in my free time.
+I started studying at TU Delft in september 2020, and I have worked on many projects for courses since then. This is a collection of my proudest work related to computer graphics from my time at university. All other projects listed on my portfolio were made on my own, in my free time.
 
 
 ## Pizzicato
@@ -34,6 +34,14 @@ With two peers, I worked on a basic volume visualization tool in C++. During a l
 With one peer, I created a simple 3D game engine in C++ and OpenGL in about a week. We added support for many lights at once (both Directional and Spotlights), HDR pipeline, post processing(Bloom, ToneMapping), simple physics including character movement, pushable cubes and a heightmap based collider, animated grass using instancing, Real-time Environment mapping, GPU particles (Fireflies), Frustum Culling, and depth based Fog.
 
 {{< figure src="/portfolio/images/UniversityProjects/3dgame1.png" width=100% title="An interactive environment made with our engine">}}
+
+
+## Path-guiding explorative visualization web-tool
+
+For another course, I was tasked with explaining a recent Computer Graphics paper. I chose to explain "Real-Time Path Guiding Using Bounding Voxel Sampling" by Lu et al. In the tool, you can explore the different steps explained in the paper, and interact with the scene and settings to see how the result changes. I built it myself in React, typescript, and p5.js. [Check out the live demo on my github](https://jorisar.github.io/SeminarVXPG/)
+
+{{< figure src="/portfolio/images/UniversityProjects/vxpg.png" width=500 title="(React + Typescript) An interactive tool to explore and understand the [VXPG paper](https://suikasibyl.github.io/vxpg)">}}
+
 
 ## Image Processing
 During multiple courses I worked on image processing projects, here are some examples.
