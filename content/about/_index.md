@@ -24,22 +24,29 @@ Between 2020 and 2023, I was active at two different high schools as a tutor and
 
 
 ## Skills
-I am proficient with the following languages & languages:
+This is a non-exhaustive list of proficiencies: 
 
-- C++
-- C#
-- Python
-- Java
-- Javascript/Typescript
-- Unity
-- Godot
-- OpenGL
-- PyTorch
-- OpenCV
-- Github
-- CI/CD
+- **Programming Languages**
+    - C++
+    - C#
+    - Python
+    - Java
+    - Javascript/Typescript
 
-To see some of my work, check out my [Project Posts]({{< ref "/posts/_index.md" >}}), or my [University Projects]({{< ref "/posts/UniversityProjects.md" >}}).
+- **Frameworks**
+    - CUDA
+    - OpenGL
+    - PyTorch
+    - OpenCV
+
+- **Tools**
+    - Unity
+    - Godot
+    - Github
+    - CI/CD
+
+
+To see some of my work, check-out my [Project Posts]({{< ref "/posts/_index.md" >}}), or my [University Projects]({{< ref "/posts/UniversityProjects.md" >}}).
 
 ## Hobbies
 

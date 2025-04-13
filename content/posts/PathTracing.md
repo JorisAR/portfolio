@@ -7,6 +7,11 @@ date: "2025-03-16"
 
 {{<youtube DDBWp8ck5fg>}}
 
+
+#### update
+I’m thrilled to share that this project has been featured in the community section of the [April 2025 edition of the official Godot newsletter](https://godot.news/archive/846f5b69-d9f4-4b79-9d2b-ced21327e213)!
+
+---
   
 Ray and path tracing is becoming more and more popular in real-time graphics. Many modern games release with ray traced reflections, and some games even attempt to have full path traced global illumination, essentially modelling light like in real-life.
 However, Godot lacks a good path tracing solution. Therefore, I had to dive in and make a simple renderer myself.

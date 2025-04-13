@@ -6,14 +6,21 @@
     <description>Recent content in Projects on Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/portfolio/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Voxel Planets</title>
+      <link>http://localhost:1313/portfolio/posts/voxelplanets/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/posts/voxelplanets/</guid>
+      <description>Hello everyone! A while back, I showed my first implementation of a Smooth Voxel Terrain. While I was reasonably satisfied, it left a lot to be desired. The terrain suffered from some artifacts and performance issues, and because it was programmed in C# it could not be easily integrated into other projects. For these reasons, I decided to start working on a new implementation from scratch in C++, addressing many of these problems.</description>
+    </item>
     <item>
       <title>Path Tracing</title>
       <link>http://localhost:1313/portfolio/posts/pathtracing/</link>
       <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/posts/pathtracing/</guid>
-      <description>Ray and path tracing is becoming more and more popular in real-time graphics. Many modern games release with ray traced reflections, and some games even attempt to have full path traced global illumination, essentially modelling light like in real-life. However, Godot lacks a good path tracing solution. Therefore, I had to dive in and make a simple renderer myself.&#xA;To render a basic picture with any ray based technique, we shoot a ray into the scene for every pixel on the screen.</description>
+      <description>update I’m thrilled to share that this project has been featured in the community section of the April 2025 edition of the official Godot newsletter!&#xA;Ray and path tracing is becoming more and more popular in real-time graphics. Many modern games release with ray traced reflections, and some games even attempt to have full path traced global illumination, essentially modelling light like in real-life. However, Godot lacks a good path tracing solution.</description>
     </item>
     <item>
       <title>Training Evolutionary Agents</title>
