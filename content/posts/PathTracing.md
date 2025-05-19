@@ -8,7 +8,7 @@ date: "2025-03-16"
 {{<youtube DDBWp8ck5fg>}}
 
 
-#### update
+#### Update:
 I’m thrilled to share that this project has been featured in the community section of the [April 2025 edition of the official Godot newsletter](https://godot.news/archive/846f5b69-d9f4-4b79-9d2b-ced21327e213)!
 
 ---

@@ -6,21 +6,28 @@
     <description>Recent content in Joris&#39; Portfolio on Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dancing Fractals</title>
+      <link>http://localhost:1313/portfolio/posts/dancingfractals/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/posts/dancingfractals/</guid>
+      <description>I wanted to combine my love for computer graphics and music, by creating a music video generator. The idea is to design a dynamic renderer that enables me to quickly iterate on some neat looking visuals that move to music playing in the background. I realized that one of the best options for this is ray marching, as we can apply many fun tricks to quickly create some sophisticated looking scenes with a bit of mathematics.</description>
+    </item>
     <item>
       <title>Voxel Planets</title>
       <link>http://localhost:1313/portfolio/posts/voxelplanets/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/posts/voxelplanets/</guid>
-      <description>Hello everyone! A while back, I showed my first implementation of a Smooth Voxel Terrain. While I was reasonably satisfied, it left a lot to be desired. The terrain suffered from some artifacts and performance issues, and because it was programmed in C# it could not be easily integrated into other projects. For these reasons, I decided to start working on a new implementation from scratch in C++, addressing many of these problems.</description>
+      <description>A while back, I showed my first implementation of a Smooth Voxel Terrain. While I was reasonably satisfied, it left a lot to be desired. The terrain suffered from some artifacts and performance issues, and because it was programmed in C# it could not be easily integrated into other projects. For these reasons, I decided to start working on a new implementation from scratch in C++, addressing many of these problems.</description>
     </item>
     <item>
       <title>Path Tracing</title>
       <link>http://localhost:1313/portfolio/posts/pathtracing/</link>
       <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/posts/pathtracing/</guid>
-      <description>update I’m thrilled to share that this project has been featured in the community section of the April 2025 edition of the official Godot newsletter!&#xA;Ray and path tracing is becoming more and more popular in real-time graphics. Many modern games release with ray traced reflections, and some games even attempt to have full path traced global illumination, essentially modelling light like in real-life. However, Godot lacks a good path tracing solution.</description>
+      <description>Update: I’m thrilled to share that this project has been featured in the community section of the April 2025 edition of the official Godot newsletter!&#xA;Ray and path tracing is becoming more and more popular in real-time graphics. Many modern games release with ray traced reflections, and some games even attempt to have full path traced global illumination, essentially modelling light like in real-life. However, Godot lacks a good path tracing solution.</description>
     </item>
     <item>
       <title>Training Evolutionary Agents</title>

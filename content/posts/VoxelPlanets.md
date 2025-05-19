@@ -7,7 +7,6 @@ date: "2025-04-13"
 
 {{<youtube ip0IKGwx49M>}}
   
-Hello everyone!
 A while back, I showed my first implementation of a [Smooth Voxel Terrain]({{< ref "/posts/SmoothVoxelTerrain.md" >}}). While I was reasonably satisfied, it left a lot to be desired. The terrain suffered from some artifacts and performance issues, and because it was programmed in C# it could not be easily integrated into other projects.
 For these reasons, I decided to start working on a new implementation from scratch in C++, addressing many of these problems. While the new version is not production ready by any means, feel free to check out the [source code here](https://github.com/JorisAR/GDVoxelTerrain). This newer implementation has a greater focus on spherical planets, but should work for any kind of terrain.
 
