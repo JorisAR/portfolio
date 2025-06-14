@@ -5,6 +5,12 @@ description: "Octrees, Signed Distance Fields, and Surface nets"
 date: "2024-08-30"
 ---
 
+#### Update:
+I rewrote this project from the ground up in C++, and I made some algorithmic improvements. [Please refer to the new version]({{< ref "/posts/VoxelPlanets.md" >}}).
+
+---
+  
+
 {{< youtube PLMcCKeJ6f0 >}}
 
 Rendering large terrains is no easy task. In real-time computer graphics, terrains are often large subdivided planes with vertices translated vertically based on a heightmap, but this means that overhangs or caves are impossible without extra work or additional meshes. Instead, we can use a three dimensional volume to represent the terrain. However, if we want a 4 by 4 by 4 kilometer 3D terrain at a 1 cubic meter resolution with just a floating point number at every position, we would need about a quarter terabyte of memory. I have therefore set out to create an efficient system that generates a smooth and watertight triangle mesh terrain, based on a voxel octree. I chose to implement it in Godot using the c# programming language. To understand the implementation, we first need to go over some concepts.

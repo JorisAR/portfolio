@@ -52,5 +52,6 @@ To compute the right radiance at a point more quickly, we can send more light ra
 To make the scene truly look good, we want to vary material properties. Of course, we can simply create different material settings for each mesh in the scene, but it’s also nice to have some variance within each bit of geometry. We can achieve this with textures much like in rasterization. We need all these textures available to the shader at once. We can provide these in a texture sampler array. In Godot, I only got this to work if each texture has the same size and data format, which is fine for this project.
 
 Overall, I am pretty happy with my implementation. It converts any mesh in a godot scene into an array mesh, and builds a BVH for each one. I have to handle this myself, as the ray tracing API is not exposed to Godot compute shaders as far as I am aware. On the upside, this does mean greater compatibility with more GPUs. It then creates a top level BVH that combines all the mesh instances. It also converts all the spatial materials into material structs that are read by my path tracer. Then, it renders the scene and accumulates samples while the camera is not moving, i.e. progressive rendering. I’ve made everything open source, so feel free to play around with it.
-[Check it out here](https://github.com/JorisAR/GDPathTracing)
+
+[Find the source code here](https://github.com/JorisAR/GDPathTracing)
 

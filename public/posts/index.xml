@@ -6,17 +6,24 @@
     <description>Recent content in Projects on Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/portfolio/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Voxel Planets</title>
-      <link>http://localhost:1313/portfolio/posts/dancingfractals/</link>
-      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/posts/dancingfractals/</guid>
-      <description>A while back, I showed my first implementation of a Smooth Voxel Terrain. While I was reasonably satisfied, it left a lot to be desired. The terrain suffered from some artifacts and performance issues, and because it was programmed in C# it could not be easily integrated into other projects. For these reasons, I decided to start working on a new implementation from scratch in C++, addressing many of these problems.</description>
+      <title>Ray-Marched Voxel Simulation</title>
+      <link>http://localhost:1313/portfolio/posts/voxelplayground/</link>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/posts/voxelplayground/</guid>
+      <description>I have created a new voxel engine that is designed to handle fully dynamic scenes. Inspired by classic falling sand games, my aim was to create a system that can handle many unique interactions between different materials. The world is rendered using direct voxel volume rendering, such that changes to the world are immediately reflected on screen. As we are updating upwards of hundreds of millions of voxels, many times per second, the entire simulation is run on the GPU using compute shaders.</description>
     </item>
     <item>
-      <title>Voxel Planets</title>
+      <title>Ray Marching Fractals that move to Music</title>
+      <link>http://localhost:1313/portfolio/posts/dancingfractals/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/posts/dancingfractals/</guid>
+      <description>I wanted to combine my love for computer graphics and music, by creating a music video generator. The idea is to design a dynamic renderer that enables me to quickly iterate on some neat looking visuals that move to music playing in the background. I realized that one of the best options for this is ray marching, as we can apply many fun tricks to quickly create some sophisticated looking scenes with a bit of mathematics.</description>
+    </item>
+    <item>
+      <title>Destructible Large-Scale Voxel Planets using Surface Nets</title>
       <link>http://localhost:1313/portfolio/posts/voxelplanets/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/posts/voxelplanets/</guid>
@@ -69,7 +76,7 @@
       <link>http://localhost:1313/portfolio/posts/smoothvoxelterrain/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/posts/smoothvoxelterrain/</guid>
-      <description>Rendering large terrains is no easy task. In real-time computer graphics, terrains are often large subdivided planes with vertices translated vertically based on a heightmap, but this means that overhangs or caves are impossible without extra work or additional meshes. Instead, we can use a three dimensional volume to represent the terrain. However, if we want a 4 by 4 by 4 kilometer 3D terrain at a 1 cubic meter resolution with just a floating point number at every position, we would need about a quarter terabyte of memory.</description>
+      <description>Update: I rewrote this project from the ground up in C++, and I made some algorithmic improvements. Please refer to the new version.&#xA;Rendering large terrains is no easy task. In real-time computer graphics, terrains are often large subdivided planes with vertices translated vertically based on a heightmap, but this means that overhangs or caves are impossible without extra work or additional meshes. Instead, we can use a three dimensional volume to represent the terrain.</description>
     </item>
     <item>
       <title>University Projects</title>

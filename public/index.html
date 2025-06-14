@@ -50,8 +50,8 @@
 
   <meta itemprop="name" content="Joris&#39; Portfolio">
   <meta itemprop="description" content="Computer Science &amp; Graphics">
-  <meta itemprop="datePublished" content="2025-05-19T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-05-19T00:00:00+00:00">
+  <meta itemprop="datePublished" content="2025-06-14T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-06-14T00:00:00+00:00">
   <meta itemprop="wordCount" content="33">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Joris&#39; Portfolio">
@@ -186,9 +186,60 @@
       
           
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/portfolio/posts/voxelplayground/" class="db grow">
+            <div class="square">
+              <img src="http://localhost:1313/portfolio/images/VoxelPlayground/teaser.png" class="img" alt="image from Ray-Marched Voxel Simulation">
+            </div>
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/portfolio/posts/voxelplayground/" class="color-inherit dim link">
+            Ray-Marched Voxel Simulation
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          I have created a new voxel engine that is designed to handle fully dynamic scenes. Inspired by classic falling sand games, my aim was to create a system that can handle many unique interactions between different materials. The world is rendered using direct voxel volume rendering, such that changes to the world are immediately reflected on screen. As we are updating upwards of hundreds of millions of voxels, many times per second, the entire simulation is run on the GPU using compute shaders.
+        </div>
+          <a href="/portfolio/posts/voxelplayground/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+.square {
+  width: 100%;
+  padding-top: 60%;  
+  position: relative;
+  overflow: hidden;
+}
+.square img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+            </div>
+          
+            <div class="relative w-100 mb4">
+              
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
           <a href="/portfolio/posts/dancingfractals/" class="db grow">
             <div class="square">
-              <img src="http://localhost:1313/portfolio/images/DancingFractals/teaser.png" class="img" alt="image from Dancing Fractals">
+              <img src="http://localhost:1313/portfolio/images/DancingFractals/teaser.png" class="img" alt="image from Ray Marching Fractals that move to Music">
             </div>
           </a>
         </div>
@@ -196,7 +247,7 @@
       <div class="blah w-100 w-60-ns pl3-ns">
         <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/portfolio/posts/dancingfractals/" class="color-inherit dim link">
-            Dancing Fractals
+            Ray Marching Fractals that move to Music
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
@@ -239,7 +290,7 @@
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
           <a href="/portfolio/posts/voxelplanets/" class="db grow">
             <div class="square">
-              <img src="http://localhost:1313/portfolio/images/VoxelPlanets/teaser.png" class="img" alt="image from Voxel Planets">
+              <img src="http://localhost:1313/portfolio/images/VoxelPlanets/teaser.png" class="img" alt="image from Destructible Large-Scale Voxel Planets using Surface Nets">
             </div>
           </a>
         </div>
@@ -247,65 +298,13 @@
       <div class="blah w-100 w-60-ns pl3-ns">
         <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/portfolio/posts/voxelplanets/" class="color-inherit dim link">
-            Voxel Planets
+            Destructible Large-Scale Voxel Planets using Surface Nets
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
           A while back, I showed my first implementation of a Smooth Voxel Terrain. While I was reasonably satisfied, it left a lot to be desired. The terrain suffered from some artifacts and performance issues, and because it was programmed in C# it could not be easily integrated into other projects. For these reasons, I decided to start working on a new implementation from scratch in C++, addressing many of these problems.
         </div>
           <a href="/portfolio/posts/voxelplanets/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-<style>
-.square {
-  width: 100%;
-  padding-top: 60%;  
-  position: relative;
-  overflow: hidden;
-}
-.square img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-}
-</style>
-
-            </div>
-          
-            <div class="relative w-100 mb4">
-              
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-          
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <a href="/portfolio/posts/pathtracing/" class="db grow">
-            <div class="square">
-              <img src="http://localhost:1313/portfolio/images/PathTracing/teaser.png" class="img" alt="image from Path Tracing">
-            </div>
-          </a>
-        </div>
-      
-      <div class="blah w-100 w-60-ns pl3-ns">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/portfolio/posts/pathtracing/" class="color-inherit dim link">
-            Path Tracing
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Update: I’m thrilled to share that this project has been featured in the community section of the April 2025 edition of the official Godot newsletter!
-Ray and path tracing is becoming more and more popular in real-time graphics. Many modern games release with ray traced reflections, and some games even attempt to have full path traced global illumination, essentially modelling light like in real-life. However, Godot lacks a good path tracing solution.
-        </div>
-          <a href="/portfolio/posts/pathtracing/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
       </div>
     </div>
@@ -340,6 +339,12 @@ Ray and path tracing is becoming more and more popular in real-time graphics. Ma
           
           
             <h2 class="f5 fw4 mb4 dib mr3">
+              <a href="/portfolio/posts/pathtracing/" class="link black dim">
+                Path Tracing
+              </a>
+            </h2>
+          
+            <h2 class="f5 fw4 mb4 dib mr3">
               <a href="/portfolio/posts/evolutionaryagents/" class="link black dim">
                 Training Evolutionary Agents
               </a>
@@ -354,12 +359,6 @@ Ray and path tracing is becoming more and more popular in real-time graphics. Ma
             <h2 class="f5 fw4 mb4 dib mr3">
               <a href="/portfolio/posts/forestfires/" class="link black dim">
                 Simulating Forest Fires
-              </a>
-            </h2>
-          
-            <h2 class="f5 fw4 mb4 dib mr3">
-              <a href="/portfolio/posts/population/" class="link black dim">
-                Population of a Large-Scale Terrain
               </a>
             </h2>
           

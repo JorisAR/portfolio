@@ -50,8 +50,8 @@
 
   <meta itemprop="name" content="Projects">
   <meta itemprop="description" content="These are some of my projects I have worked on over the years.">
-  <meta itemprop="datePublished" content="2025-04-13T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-04-13T00:00:00+00:00">
+  <meta itemprop="datePublished" content="2025-06-14T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-06-14T00:00:00+00:00">
   <meta itemprop="wordCount" content="13">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Projects">
@@ -159,9 +159,61 @@
       
           
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/portfolio/posts/voxelplayground/" class="db grow">
+            <div class="square">
+              <img src="http://localhost:1313/portfolio/images/VoxelPlayground/teaser.png" class="img" alt="image from Ray-Marched Voxel Simulation">
+            </div>
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/portfolio/posts/voxelplayground/" class="color-inherit dim link">
+            Ray-Marched Voxel Simulation
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          I have created a new voxel engine that is designed to handle fully dynamic scenes. Inspired by classic falling sand games, my aim was to create a system that can handle many unique interactions between different materials. The world is rendered using direct voxel volume rendering, such that changes to the world are immediately reflected on screen. As we are updating upwards of hundreds of millions of voxels, many times per second, the entire simulation is run on the GPU using compute shaders.
+        </div>
+          <a href="/portfolio/posts/voxelplayground/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+.square {
+  width: 100%;
+  padding-top: 60%;  
+  position: relative;
+  overflow: hidden;
+}
+.square img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+        </div>
+      
+      
+        <div class="relative w-100 w-80-l mb4 bg-white">
+          
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
           <a href="/portfolio/posts/dancingfractals/" class="db grow">
             <div class="square">
-              <img src="http://localhost:1313/portfolio/images/VoxelPlanets/teaser.png" class="img" alt="image from Voxel Planets">
+              <img src="http://localhost:1313/portfolio/images/DancingFractals/teaser.png" class="img" alt="image from Ray Marching Fractals that move to Music">
             </div>
           </a>
         </div>
@@ -169,11 +221,11 @@
       <div class="blah w-100 w-60-ns pl3-ns">
         <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/portfolio/posts/dancingfractals/" class="color-inherit dim link">
-            Voxel Planets
+            Ray Marching Fractals that move to Music
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          A while back, I showed my first implementation of a Smooth Voxel Terrain. While I was reasonably satisfied, it left a lot to be desired. The terrain suffered from some artifacts and performance issues, and because it was programmed in C# it could not be easily integrated into other projects. For these reasons, I decided to start working on a new implementation from scratch in C++, addressing many of these problems.
+          I wanted to combine my love for computer graphics and music, by creating a music video generator. The idea is to design a dynamic renderer that enables me to quickly iterate on some neat looking visuals that move to music playing in the background. I realized that one of the best options for this is ray marching, as we can apply many fun tricks to quickly create some sophisticated looking scenes with a bit of mathematics.
         </div>
           <a href="/portfolio/posts/dancingfractals/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
@@ -213,7 +265,7 @@
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
           <a href="/portfolio/posts/voxelplanets/" class="db grow">
             <div class="square">
-              <img src="http://localhost:1313/portfolio/images/VoxelPlanets/teaser.png" class="img" alt="image from Voxel Planets">
+              <img src="http://localhost:1313/portfolio/images/VoxelPlanets/teaser.png" class="img" alt="image from Destructible Large-Scale Voxel Planets using Surface Nets">
             </div>
           </a>
         </div>
@@ -221,7 +273,7 @@
       <div class="blah w-100 w-60-ns pl3-ns">
         <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/portfolio/posts/voxelplanets/" class="color-inherit dim link">
-            Voxel Planets
+            Destructible Large-Scale Voxel Planets using Surface Nets
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
@@ -597,7 +649,8 @@ Generate a heightmap texture based on the octree. This would involve raymarching
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Rendering large terrains is no easy task. In real-time computer graphics, terrains are often large subdivided planes with vertices translated vertically based on a heightmap, but this means that overhangs or caves are impossible without extra work or additional meshes. Instead, we can use a three dimensional volume to represent the terrain. However, if we want a 4 by 4 by 4 kilometer 3D terrain at a 1 cubic meter resolution with just a floating point number at every position, we would need about a quarter terabyte of memory.
+          Update: I rewrote this project from the ground up in C++, and I made some algorithmic improvements. Please refer to the new version.
+Rendering large terrains is no easy task. In real-time computer graphics, terrains are often large subdivided planes with vertices translated vertically based on a heightmap, but this means that overhangs or caves are impossible without extra work or additional meshes. Instead, we can use a three dimensional volume to represent the terrain.
         </div>
           <a href="/portfolio/posts/smoothvoxelterrain/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
@@ -626,60 +679,27 @@ Generate a heightmap texture based on the octree. This would involve raymarching
 
         </div>
       
-      
-        <div class="relative w-100 w-80-l mb4 bg-white">
-          
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-          
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <a href="/portfolio/posts/universityprojects/" class="db grow">
-            <div class="square">
-              <img src="http://localhost:1313/portfolio/images/UniversityProjects/collage.png" class="img" alt="image from University Projects">
-            </div>
-          </a>
-        </div>
-      
-      <div class="blah w-100 w-60-ns pl3-ns">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/portfolio/posts/universityprojects/" class="color-inherit dim link">
-            University Projects
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          I started studying at TU Delft in september 2020, and I have worked on many projects for courses since then. This is a collection of my proudest work related to computer graphics from my time at university. All other projects listed on my portfolio were made on my own, in my free time.
-Pizzicato A serious game developed in 10 weeks with 4 other peers in collaboration with Psychology researchers, during which I was Game Designer and Programmer.
-        </div>
-          <a href="/portfolio/posts/universityprojects/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-<style>
-.square {
-  width: 100%;
-  padding-top: 60%;  
-  position: relative;
-  overflow: hidden;
-}
-.square img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-}
-</style>
-
-        </div>
-      
-    </section></article>
+    </section>
+    <ul class="pagination pagination-default">
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/portfolio/posts/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/portfolio/posts/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/portfolio/posts/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul></article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">

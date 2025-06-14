@@ -1,5 +1,5 @@
 ---
-title: "Dancing Fractals"
+title: "Ray Marching Fractals that move to Music"
 featured_image: '/images/DancingFractals/teaser.png'
 description: "Ray Marching, Fractals and Signal Processing"
 date: "2025-05-19"
@@ -66,5 +66,5 @@ By doing this, we essentially do the first iterations of ray marching 100 times 
 Overall, I am happy with the results. I’ve presented a viable framework for making renders that interact with music. I have once again open sourced this project under the MIT license. In the future I may expand it with more scenes or render features.
 
 
-[Check it out here](https://github.com/JorisAR/MusicVideoGenerator)
+[Find the sourcecode here](https://github.com/JorisAR/MusicVideoGenerator)
 

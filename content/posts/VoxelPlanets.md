@@ -1,5 +1,5 @@
 ---
-title: "Voxel Planets"
+title: "Destructible Large-Scale Voxel Planets using Surface Nets"
 featured_image: '/images/VoxelPlanets/teaser.png'
 description: "Octrees, Signed Distance Fields, and Surface nets all over again!"
 date: "2025-04-13"
