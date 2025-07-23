@@ -3,6 +3,7 @@ title: "Large-Scale Smooth Voxel Terrain"
 featured_image: '/images/SmoothVoxelTerrain/banner.png'
 description: "Octrees, Signed Distance Fields, and Surface nets"
 date: "2024-08-30"
+tags: ["Graphics", "Voxels", "Mesh Extraction", "Level of Detail"]
 ---
 
 #### Update:

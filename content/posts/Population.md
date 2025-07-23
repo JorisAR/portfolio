@@ -3,6 +3,7 @@ title: "Population of a Large-Scale Terrain"
 featured_image: '/images/Population/screenshot3.png'
 description: "Octrees, Sampling Methods and Lots of Objects"
 date: "2024-09-24"
+tags: ["Graphics", "Level of Detail"]
 ---
 
 {{< youtube 1y3Wop1-KQA >}}

@@ -1,11 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Portfolio</title>
+    <title>Browse Tags on Joris Rijsdijk</title>
     <link>http://localhost:1313/portfolio/tags/</link>
-    <description>Recent content in Tags on Portfolio</description>
+    <description>Recent content in Browse Tags on Joris Rijsdijk</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Graphics</title>
+      <link>http://localhost:1313/portfolio/tags/graphics/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/tags/graphics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technical Art</title>
+      <link>http://localhost:1313/portfolio/tags/technical-art/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/tags/technical-art/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Simulation</title>
+      <link>http://localhost:1313/portfolio/tags/simulation/</link>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/tags/simulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Voxels</title>
+      <link>http://localhost:1313/portfolio/tags/voxels/</link>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/tags/voxels/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ray Tracing</title>
+      <link>http://localhost:1313/portfolio/tags/ray-tracing/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/tags/ray-tracing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Level of Detail</title>
+      <link>http://localhost:1313/portfolio/tags/level-of-detail/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/tags/level-of-detail/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mesh Extraction</title>
+      <link>http://localhost:1313/portfolio/tags/mesh-extraction/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/tags/mesh-extraction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Evolutionary Algorithms</title>
+      <link>http://localhost:1313/portfolio/tags/evolutionary-algorithms/</link>
+      <pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/tags/evolutionary-algorithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Neural Networks</title>
+      <link>http://localhost:1313/portfolio/tags/neural-networks/</link>
+      <pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/tags/neural-networks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Compute Shaders</title>
+      <link>http://localhost:1313/portfolio/tags/compute-shaders/</link>
+      <pubDate>Sun, 29 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/tags/compute-shaders/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

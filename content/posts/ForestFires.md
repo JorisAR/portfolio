@@ -3,6 +3,7 @@ title: "Simulating Forest Fires"
 featured_image: '/images/ForestFires/teaser.png'
 description: "VFX using Textures, Geometric Data Processing and Billboards"
 date: "2024-11-24"
+tags: ["Graphics", "Technical Art"]
 ---
 
 {{< youtube N6fbC7LbrZc >}}

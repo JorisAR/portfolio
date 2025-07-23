@@ -3,6 +3,7 @@ title: "Ray-Marched Voxel Simulation"
 featured_image: '/images/VoxelPlayground/teaser.png'
 description: "Cellucular Automata, Voxel Bricks, and Player Interactivity"
 date: "2025-06-14"
+tags: ["Graphics", "Voxels", "Simulation"]
 ---
 
 {{<youtube OjZ7vV62lJk>}}

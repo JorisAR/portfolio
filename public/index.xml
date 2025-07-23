@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Joris&#39; Portfolio on Portfolio</title>
+    <title>Joris Rijsdijk</title>
     <link>http://localhost:1313/portfolio/</link>
-    <description>Recent content in Joris&#39; Portfolio on Portfolio</description>
+    <description>Recent content on Joris Rijsdijk</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recreating the water physics from Mario Kart World</title>
+      <link>http://localhost:1313/portfolio/posts/waterkartphysics/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/posts/waterkartphysics/</guid>
+      <description>I have been playing the new Mario Kart World game recently. During the water sections, I noticed that bob-ombs could cause large waves to appear that interact with the players. I have wanted to work on a technical art project for a while now, so I decided to implement a version of their interactive ocean system for myself. Additionally, I implemented many other effects featured in the latest Mario Kart installment, such as item boxes, boost panels and tire tracks in the sand.</description>
+    </item>
     <item>
       <title>Ray-Marched Voxel Simulation</title>
       <link>http://localhost:1313/portfolio/posts/voxelplayground/</link>

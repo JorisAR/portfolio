@@ -3,6 +3,7 @@ title: "Training Evolutionary Agents"
 featured_image: '/images/EvolutionaryAgents/teaser.png'
 description: "Evolution, Neural Networks and Simulations"
 date: "2025-01-22"
+tags: ["Evolutionary Algorithms", "Neural Networks"]
 ---
 
 {{<youtube 0v2ELbM7Vz8>}}

@@ -1,6 +1,6 @@
 baseURL = 'https://jorisar.github.io/portfolio'
 languageCode = 'en-us'
-title = 'Portfolio'
+title = 'Joris Rijsdijk'
 theme = "ananke"
 
 
@@ -22,3 +22,6 @@ theme = "ananke"
   name = "Projects"
   url = "/posts/"
   weight = 3
+
+[taxonomies]
+  tag = "tags"

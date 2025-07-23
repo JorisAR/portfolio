@@ -3,7 +3,9 @@ title: "Path Tracing"
 featured_image: '/images/PathTracing/teaser.png'
 description: "Rays, BRDFs and Noise!"
 date: "2025-03-16"
+tags: ["Graphics", "Ray Tracing"]
 ---
+
 
 {{<youtube DDBWp8ck5fg>}}
 

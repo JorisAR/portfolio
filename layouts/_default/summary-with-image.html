@@ -18,6 +18,24 @@
             {{ .Title }}
             </a>
         </h1>
+        {{ with .Params.tags }}
+          <div class="mt2 f7">
+            {{ range . }}
+              {{ $tag := . }}
+              {{ $hash := crypto.FNV32a $tag }}
+              {{ $hue := mod $hash 360 }}
+              {{ $color := printf "hsl(%d, 50%%, 75%%)" $hue }}
+
+              <a href="{{ "/portfolio/tags/" | relLangURL }}{{ $tag | urlize }}"
+                style="background-color:{{ $color }}; color:#222;"
+                class="ba br2 ph2 pv1 dib mr1 no-underline hover-shadow">
+                #{{ $tag }}
+              </a>
+            {{ end }}
+          </div>
+        {{ end }}
+
+
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
           {{ .Summary }}
         </div>

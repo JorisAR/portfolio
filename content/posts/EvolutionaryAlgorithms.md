@@ -3,6 +3,7 @@ title: "Simulating Digital Evolution"
 featured_image: '/images/EvolutionaryAlgorithms/teaser.png'
 description: "Evolution, Genetics and Distributions"
 date: "2024-12-29"
+tags: ["Evolutionary Algorithms", "Compute Shaders"]
 ---
 
 {{<youtube lbVPYQ4IG6Q>}}

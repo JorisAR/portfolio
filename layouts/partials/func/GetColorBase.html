@@ -1,0 +1,3 @@
+{{- $input := . | lower -}}
+{{- $hash := crypto.FNV32a $input -}}
+{{- printf "%06x" (mod $hash 0xFFFFFF) -}}

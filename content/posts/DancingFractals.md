@@ -3,6 +3,7 @@ title: "Ray Marching Fractals that move to Music"
 featured_image: '/images/DancingFractals/teaser.png'
 description: "Ray Marching, Fractals and Signal Processing"
 date: "2025-05-19"
+tags: ["Graphics", "Ray Tracing"]
 ---
 
 {{<youtube Dz2Hm5ThNFw>}}
