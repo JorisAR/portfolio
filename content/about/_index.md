@@ -54,4 +54,4 @@ To see some of my work, check-out my [Project Posts]({{< ref "/posts/_index.md" 
 
 ## Hobbies
 
-Other than programming, I love to spend my time playing piano and guitar, or producing and mixing music using a DAW. I also enjoy playing video games from time to time. 
+Other than programming, I love to spend my time playing various instruments such as piano, guitar and saxophone. I also like to produce music using a DAW, [see SoundCloud](https://soundcloud.com/codejar). Additionally I enjoy playing video games from time to time. 
