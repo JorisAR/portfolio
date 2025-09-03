@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Joris Rijsdijk</title>
+    <title>Projects on Portfolio</title>
     <link>http://localhost:1313/portfolio/posts/</link>
-    <description>Recent content in Projects on Joris Rijsdijk</description>
+    <description>Recent content in Projects on Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/portfolio/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Procedurally Generating Voxel Worlds using Wave Function Collapse</title>
+      <link>http://localhost:1313/portfolio/posts/voxelwavefunctioncollapse/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/posts/voxelwavefunctioncollapse/</guid>
+      <description>Hello everyone,&#xA;I recently introduced my voxel playground, a ray-traced voxel engine made with cellular automata in mind. However, so far the voxel map itself is quite barren. So I set out to populate the world in interesting ways. For a previous project, I had used Wave Function Collapse, and I thought it would be fun to try to apply it to full 3D world generation.&#xA;I have implemented two distinct versions of the algorithm.</description>
+    </item>
     <item>
       <title>Recreating the water physics from Mario Kart World</title>
       <link>http://localhost:1313/portfolio/posts/waterkartphysics/</link>

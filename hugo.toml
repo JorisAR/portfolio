@@ -1,6 +1,6 @@
 baseURL = 'https://jorisar.github.io/portfolio'
 languageCode = 'en-us'
-title = 'Joris Rijsdijk'
+title = 'Portfolio'
 theme = "ananke"
 
 

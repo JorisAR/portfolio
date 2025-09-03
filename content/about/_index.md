@@ -4,7 +4,7 @@ featured_image: '/images/banner.png'
 date: "2024-08-01"
 ---
 
-Hello everyone, My name is **Joris Rijsdijk**, a Dutch Computer Science graduate from TU Delft specializing in Computer Graphics.
+Hello everyone, My name is **Joris Rijsdijk**, a Dutch Computer Science PhD student at TU Delft specializing in Computer Graphics.
 
 
 

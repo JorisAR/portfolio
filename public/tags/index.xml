@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Browse Tags on Joris Rijsdijk</title>
+    <title>Browse Tags on Portfolio</title>
     <link>http://localhost:1313/portfolio/tags/</link>
-    <description>Recent content in Browse Tags on Joris Rijsdijk</description>
+    <description>Recent content in Browse Tags on Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Graphics</title>
       <link>http://localhost:1313/portfolio/tags/graphics/</link>
-      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/tags/graphics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Procedural Generation</title>
+      <link>http://localhost:1313/portfolio/tags/procedural-generation/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/tags/procedural-generation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Voxels</title>
+      <link>http://localhost:1313/portfolio/tags/voxels/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/tags/voxels/</guid>
       <description></description>
     </item>
     <item>
@@ -27,13 +41,6 @@
       <link>http://localhost:1313/portfolio/tags/simulation/</link>
       <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/tags/simulation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Voxels</title>
-      <link>http://localhost:1313/portfolio/tags/voxels/</link>
-      <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/tags/voxels/</guid>
       <description></description>
     </item>
     <item>
