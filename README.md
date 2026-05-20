@@ -1,4 +1,9 @@
-# Portfolio
+# Portfolio - Deprecated
+
+My new blog can be found at [jorisar.nl](https://jorisar.nl/)
+
+## OLD
+
 ![Portfolio Banner](static/images//banner.png)
 
 Welcome to my portfolio! Here you can find all my projects, work experience, and more information about me. This portfolio is [hosted on GitHub Pages](https://jorisar.github.io/portfolio/).

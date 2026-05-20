@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving to jorisar.nl</title>
+    
+    <link rel="canonical" href="https://jorisar.nl/">
+
+    <script>
+        const NEW_DOMAIN = "https://jorisar.nl";
+        let destinationUrl = NEW_DOMAIN;
+        window.location.replace(destinationUrl);
+    </script>
+</head>
+<body>
+    <p>Redirecting you to our new home at <a id="fallback-link" href="https://jorisar.nl">jorisar.nl</a>...</p>
+    <script>
+        document.getElementById("fallback-link").href = destinationUrl;
+    </script>
+</body>
+</html>
